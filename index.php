@@ -1,0 +1,924 @@
+		<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Synapsys Layout</title>
+
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<strong style="color: #ff3b30;">Synapsys</strong>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Expertises</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Carrière</a></li>
+					<li><a href="#">À propos</a></li>
+					<li><a href="#">Actualités</a></li>
+					<li><button>Contactez-nous !</button></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="hero">
+			<div class="hero-left">Bienvenue, [prénom].</div>
+			<div class="hero-right">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a leo dictum, molestie urna ac, convallis neque. Nulla et mauris sagittis, viverra ante nec, dignissim arcu. </p>
+				<button class="hero-button">CTA</button>
+			</div>
+		</div>
+
+		<div class="testimonial">
+			<img src="images/placeholder-black.png" alt="Image Témoignage">
+			<div class="testimonial-text">
+				<h2>“Sed at laoreet sem”</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a leo dictum, molestie urna ac, convallis neque. Nulla et mauris sagittis, viverra ante nec, dignissim arcu. Aenean commodo consequat pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed at laoreet sem. Aenean a porttitor nisi. Donec vitae placerat dui. In hac habitasse platea dictumst.</p>
+				<div class="testimonial-author">
+					<img src="images/placeholder-black.png" alt="Auteur">
+					<div>
+						<strong>Cédric Noizet et Sébastien Di Ruocco</strong><br>
+						Directeur Général et Président de Synapsys
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wave-container">
+		<svg width="100%" height="auto" viewBox="0 0 1440 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0 76.1332L80.1 73.4718C160.2 70.7154 320.4 65.3926 480.24 87.7292C640.26 110.066 799.74 160.062 959.76 150.082C1119.6 140.101 1279.8 70.1451 1359.9 35.0719L1440 0.09375V345.123H83.052C76.86 345.123 0 345.218 0 345.009V76.1332Z" fill="#FFF1F1"/>
+		</svg>
+		</div>
+		<div class="resources">
+			<div class="resources-text">
+				<h2>TITRE H2 - RESSOURCES</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a leo dictum, 
+					molestie urna ac, convallis neque.</p>
+				<ul class="resources-list">
+					<li><span class="icon red"></span> Livret d’accueil</li>
+					<li><span class="icon green"></span> Fiche d’entretien</li>
+					<li><span class="icon blue"></span> Document sympa</li>
+					<li><span class="icon yellow"></span> Document chouette</li>
+				</ul>
+			</div>
+		<div class="resources-image">
+			<img src="images/placeholder-black.png" alt="Image Ressources">
+		</div>
+
+
+		</div>
+		<div class="wave-container-bottom">
+			<svg width="100%" height="auto" viewBox="0 0 1438 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0 109.168C159.726 124.429 319.47 139.713 479.573 147.813C639.371 155.673 798.629 156.546 958.427 148.905C1118.57 141.241 1278.31 125.303 1438 109.168V0.000793457H0V109.168Z" fill="#FFF1F1"/>
+			</svg>
+		</div>
+		<div class="photo-carousel">
+
+			<h2>TITRE 2 - LA RHINO A HÂTE DE TE RENCONTRER</h2>
+			<div class="carousel-container">
+
+				<div class="carousel">
+				   <div class="carousel-track">
+					<img src="images/placeholder-black.png" alt="Photo 1">
+					<img src="images/placeholder-black.png" alt="Photo 2">
+					<img src="images/placeholder-black.png" alt="Photo 3">
+					<img src="images/placeholder-black.png" alt="Photo 4">
+					<img src="images/placeholder-black.png" alt="Photo 5">
+					<img src="images/placeholder-black.png" alt="Photo 6">
+					<img src="images/placeholder-black.png" alt="Photo 7">
+					<img src="images/placeholder-black.png" alt="Photo 8">
+
+					<!-- DUPLICATION pour l'effet infini -->
+					<img src="images/placeholder-black.png" alt="Photo 1">
+					<img src="images/placeholder-black.png" alt="Photo 2">
+					<img src="images/placeholder-black.png" alt="Photo 3">
+					<img src="images/placeholder-black.png" alt="Photo 4">
+					<img src="images/placeholder-black.png" alt="Photo 5">
+					<img src="images/placeholder-black.png" alt="Photo 6">
+					<img src="images/placeholder-black.png" alt="Photo 7">
+					<img src="images/placeholder-black.png" alt="Photo 8">
+				</div>
+
+			 </div>
+			</div>
+		</div>
+		<div class="video-section">
+			<div class="video-container">
+				<h2>TITRE 2 - SQUADS</h2>
+				<div class="video-wrapper">
+					<iframe 
+						src="https://www.youtube.com/embed/c21QZnQtGqo" 
+						frameborder="0" 
+						allowfullscreen>
+					</iframe>
+					<div class="video-overlay" onclick="playVideo(this)">
+						<button class="play-button">&#9658;</button>
+					</div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a leo dictum, molestie urna ac, convallis neque...</p>
+				<button class="cta-button">CTA</button>
+			</div>
+
+			<div class="video-container">
+				<h2 class="red-title">TITRE 2 - BUM</h2>
+				<div class="video-wrapper">
+					<iframe 
+						src="https://www.youtube.com/embed/c21QZnQtGqo" 
+						frameborder="0" 
+						allowfullscreen>
+					</iframe>
+					<div class="video-overlay" onclick="playVideo(this)">
+						<button class="play-button">&#9658;</button>
+					</div>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a leo dictum, molestie urna ac, convallis neque...</p>
+			</div>
+		</div>
+
+		<div class="wave-container">
+			<svg width="100%" height="auto" viewBox="0 0 1440 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0 76.1332L80.1 73.4718C160.2 70.7154 320.4 65.3926 480.24 87.7292C640.26 110.066 799.74 160.062 959.76 150.082C1119.6 140.101 1279.8 70.1451 1359.9 35.0719L1440 0.09375V345.123H83.052C76.86 345.123 0 345.218 0 345.009V76.1332Z" fill="#ECFFFF"/>
+			</svg>
+		</div>
+
+
+
+		<div class="news-section">
+			<h2>TITRE 2 - NOS ACTUALITÉS</h2>
+			<div class="news-container">
+				<!-- Carte 1 -->
+				<div class="news-card">
+					<div class="news-card-inner">
+						<div class="news-card-front" style="background-image: url('images/placeholder-black.png');">
+							<p>Les prochaines soirées ✨</p>
+						</div>
+						<div class="news-card-back">
+							<p>Détails sur les prochaines soirées et événements à venir. Inscrivez-vous dès maintenant !</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Carte 2 -->
+				<div class="news-card">
+					<div class="news-card-inner">
+						<div class="news-card-front" style="background-image: url('images/placeholder-black.png');">
+							<p>Les prochains événements 🖥️</p>
+						</div>
+						<div class="news-card-back">
+							<p>Webinaires, conférences et ateliers techniques à ne pas manquer. Restez informés !</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Carte 3 -->
+				<div class="news-card">
+					<div class="news-card-inner">
+					  <div class="news-card-front" style="background-image: url('images/placeholder-black.png');">
+							<p><strong>Nos dernières publications 📄</strong></p>
+						</div>
+						<div class="news-card-back">
+							<ul>
+								<li>7 raisons de réaliser un audit de ses infrastructures IT</li>
+								<li>Hallucinations LLM : tout ce qu’il faut savoir</li>
+								<li>Guide pour réussir sa migration de tenant Microsoft</li>
+								<li>Alternatives à VMware : faut-il migrer ?</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wave-container-bottom">
+			<svg width="100%" height="auto" viewBox="0 0 1438 155" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M0 109.168C159.726 124.429 319.47 139.713 479.573 147.813C639.371 155.673 798.629 156.546 958.427 148.905C1118.57 141.241 1278.31 125.303 1438 109.168V0.000793457H0V109.168Z" fill="#ECFFFF"/>
+			</svg>
+		</div>
+
+		<div class="interlocuteurs">
+			<h2>TITRE 2 - TES INTERLOCUTEURS</h2>
+			<div class="interlocuteurs-container">
+				<!-- Carte 1 -->
+				<div class="interlocuteur-card">
+					<img src="images/placeholder-black.png" alt="Interlocuteur 1">
+					<div class="interlocuteur-info">
+						<h3>Business Unit Manager</h3>
+
+
+						<p>Jean Dupont</p>
+						<p>jean.dupont@synapsys-groupe.com</p>
+						<p>02 02 02 02 02</p>
+					</div>
+				</div>
+
+				<!-- Carte 2 -->
+				<div class="interlocuteur-card">
+					<img src="images/placeholder-black.png" alt="Interlocuteur 2">
+					<div class="interlocuteur-info">
+						<h3>Chargée de recrutement</h3>
+
+
+						<p>Marie Dubois</p>
+						<p>marie.dubois@synapsys-groupe.com</p>
+						<p>02 02 02 02 02</p>
+					</div>
+				</div>
+
+				<!-- Carte 3 -->
+				<div class="interlocuteur-card">
+					<img src="images/placeholder-black.png" alt="Interlocuteur 3">
+					<div class="interlocuteur-info">
+						<h3>Directrice Administrative et Financière</h3>
+
+
+
+						<p>Karine Ferment</p>
+						<p>kferment@synapsys-groupe.com</p>
+						<p>02 02 02 02 02</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="valeurs">
+        <h2>Nos valeurs</h2>
+        <div class="valeurs-container">
+            <div class="tabs-desktop">
+                <button class="tab-link active" data-index="0">Collectif</button>
+                <button class="tab-link" data-index="1">Engagement</button>
+                <button class="tab-link" data-index="2">Authenticité</button>
+                <button class="tab-link" data-index="3">Equité</button>
+            </div>
+            <div class="content-desktop">
+                <div class="value-item active" data-index="0">
+                    <img src="images/placeholder-black.png" alt="Collectif">
+                    <div class="text">
+                       
+                        <p>Nulla volutpat pulvinar consequat. In euismod sed risus sit amet viverra. Nulla a sapien purus. Suspendisse a vehicula ligula, quis lacinia lorem. Curabitur vulputate, lectus sit amet iaculis sollicitudin, libero ex tincidunt mi, quis consequat sapien lacus eget enim. Sed mattis consectetur ante in dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque rutrum congue volutpat. Etiam lobortis massa vitae turpis maximus, at accumsan diam porttitor. Sed luctus erat ante, sollicitudin porttitor quam dignissim id. In hac habitasse platea dictumst. .</p>
+                    </div>
+                </div>
+                <div class="value-item" data-index="1">
+                    <img src="images/placeholder-black.png" alt="Engagement">
+                    <div class="text">
+                        
+                        <p>Synapsys s’engage pleinement pour ses collaborateurs qui en retour, choisissent de s’investir pour le projet d’entreprise. Ainsi, managers et collaborateurs deviennent acteurs de leur montée en compétence.</p>
+                    </div>
+                </div>
+                <div class="value-item" data-index="2">
+                    <img src="images/placeholder-black.png" alt="Authenticité">
+                    <div class="text">
+                     
+                        <p>In feugiat dignissim orci et posuere. Pellentesque nisi felis, iaculis at lorem at, pulvinar dignissim ligula. Sed non euismod mauris. Nunc risus libero, efficitur ac laoreet quis, posuere quis ipsum. Donec non lectus ornare, ullamcorper felis id, elementum dui. Donec imperdiet placerat ultrices. Pellentesque eget leo vitae neque ultrices ultrices et vitae urna. Curabitur posuere bibendum ligula, sed fringilla magna viverra a. Pellentesque bibendum erat sit amet enim viverra, ac gravida quam bibendum. Pellentesque eros odio, dapibus eget egestas quis, convallis a enim. </p>
+                    </div>
+                </div>
+                <div class="value-item" data-index="3">
+                    <img src="images/placeholder-black.png" alt="Equité">
+                    <div class="text">
+                       
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ullamcorper odio, non consectetur elit. Aliquam id risus purus. Suspendisse sollicitudin venenatis nulla, at fringilla nulla sodales in. Proin molestie ac justo quis sagittis. Vivamus sed eleifend mauris. Duis bibendum vestibulum ante, quis euismod nulla malesuada non. Phasellus ut felis eget nunc aliquam varius. Nulla lacus purus, bibendum non est ac, interdum malesuada tortor. Maecenas pharetra consequat ipsum. Pellentesque mi ex, molestie vel posuere eu, dictum sed felis. Donec sit amet nulla scelerisque, porta eros non, facilisis justo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dots-container">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+            </div>
+			 <div class="slider-mobile">
+            <div class="slide active" data-index="0">
+                <h3>Collectif</h3>
+                <img src="images/placeholder-black.png" alt="Collectif">
+                <p>Synapsys s’engage pleinement pour ses collaborateurs qui en retour, choisissent de s’investir pour le projet d’entreprise. Ainsi, managers et collaborateurs deviennent acteurs de leur montée en compétence.</p>
+            </div>
+            <div class="slide" data-index="1">
+                <h3>Engagement</h3>
+                <img src="images/placeholder-black.png" alt="Engagement">
+                <p>Synapsys s’engage pleinement pour ses collaborateurs qui en retour, choisissent de s’investir pour le projet d’entreprise. Ainsi, managers et collaborateurs deviennent acteurs de leur montée en compétence.</p>
+            </div>
+            <div class="slide" data-index="2">
+                <h3>Authenticité</h3>
+                <img src="images/placeholder-black.png" alt="Authenticité">
+                <p>Synapsys s’engage pleinement pour ses collaborateurs qui en retour, choisissent de s’investir pour le projet d’entreprise. Ainsi, managers et collaborateurs deviennent acteurs de leur montée en compétence.</p>
+            </div>
+            <div class="slide" data-index="3">
+                <h3>Equité</h3>
+                <img src="images/placeholder-black.png" alt="Equité">
+                <p>Synapsys s’engage pleinement pour ses collaborateurs qui en retour, choisissent de s’investir pour le projet d’entreprise. Ainsi, managers et collaborateurs deviennent acteurs de leur montée en compétence.</p>
+            </div>
+        </div>
+        <div class="dots-container mobile">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+        </div>
+        </div>
+       
+    </section>
+	<section class="my-expertises">
+  <h2>Nos expertises</h2>
+  <h3>
+    Nos experts vous accompagnent tout au long du cycle de vie de vos projets
+    d’infrastructures IT : du conseil à la réalisation jusqu’à la formation et
+    la maintenance.
+  </h3>
+
+
+  <div class="my-expertises-container">
+
+    <!-- Colonne gauche : fond rouge, titre, texte, onglets -->
+    <div class="my-expertises-left">
+  
+
+      <div class="my-expertises-tabs">
+        <button class="my-expertises-link is-active" data-index="0">Device Management</button>
+        <button class="my-expertises-link" data-index="1">Collaboratif</button>
+        <button class="my-expertises-link" data-index="2">Cloud</button>
+        <button class="my-expertises-link" data-index="3">DevOps</button>
+        <button class="my-expertises-link" data-index="4">Cybersécurité</button>
+        <button class="my-expertises-link" data-index="5">Transformation des SI</button>
+        <button class="my-expertises-link" data-index="6">Green IT</button>
+        <button class="my-expertises-link" data-index="7">IA &amp; Data</button>
+      </div>
+    </div>
+
+    <!-- Colonne droite : bloc blanc qui chevauche la zone rouge -->
+    <div class="my-expertises-right">
+      <div class="my-expertises-carousel">
+        <!-- Slide 1 -->
+        <div class="my-expertises-slide is-active" data-index="0">
+			<img src="images/digital-workplace.svg" alt="Engagement">
+			
+          <h3>Device Management</h3>
+          <p>
+            Nous gérons votre parc informatique (PC, mobiles, tablettes)
+            pour garantir une utilisation fluide et sécurisée.
+          </p>
+      <a href="#" class="btn-learn-more">En savoir plus →</a>
+
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="my-expertises-slide" data-index="1">
+			<img src="images/digital-workplace.svg" alt="Engagement">
+			
+          <h3>Collaboratif</h3>
+          <p>
+            Nous mettons en place des outils et plateformes collaboratives
+            pour fluidifier la communication interne et optimiser la productivité.
+          </p>
+          <a href="#" class="btn-learn-more">En savoir plus →</a>
+
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="my-expertises-slide" data-index="2">
+			<img src="images/digital-workplace.svg" alt="Engagement">
+			
+          <h3>Cloud</h3>
+          <p>
+            Nous migrons vos infrastructures vers le cloud, 
+            assurant performance et haute disponibilité.
+          </p>
+        <a href="#" class="btn-learn-more">En savoir plus →</a>
+
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="my-expertises-slide" data-index="3">
+			<img src="images/digital-workplace.svg" alt="Engagement">
+			
+          <h3>DevOps</h3>
+          <p>
+            Nous rapprochons développement et opérations pour accélérer
+            vos cycles de mise en production et gagner en agilité.
+          </p>
+<a href="#" class="btn-learn-more">En savoir plus →</a>
+
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="my-expertises-slide" data-index="4">
+			<img src="images/digital-workplace.svg" alt="Engagement">
+			
+          <h3>Cybersécurité</h3>
+          <p>
+            Nous protégeons vos systèmes et données grâce à
+            des solutions de sécurité avancées et une veille constante.
+          </p>
+        <a href="#" class="btn-learn-more">En savoir plus →</a>
+
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="my-expertises-slide" data-index="5">
+			<img src="images/digital-workplace.svg" alt="Engagement">
+			
+          <h3>Transformation des SI</h3>
+          <p>
+            Nous accompagnons les DSI pour concrétiser leurs programmes
+            de transformation digitale et moderniser leurs infrastructures.
+          </p>
+        <a href="#" class="btn-learn-more">En savoir plus →</a>
+
+        </div>
+
+        <!-- Slide 7 -->
+        <div class="my-expertises-slide" data-index="6">
+			<img src="images/digital-workplace.svg" alt="Engagement">
+			
+          <h3>Green IT</h3>
+          <p>
+            Nous vous aidons à réduire l’empreinte carbone de vos systèmes
+            en optimisant vos ressources et en adoptant des solutions durables.
+          </p>
+         <a href="#" class="btn-learn-more">En savoir plus →</a>
+
+        </div>
+
+        <!-- Slide 8 -->
+        <div class="my-expertises-slide" data-index="7">
+			<img src="images/digital-workplace.svg" alt="Engagement">
+	
+          <h3>IA &amp; Data</h3>
+          <p>
+            Nous exploitons l’intelligence artificielle et la data
+            pour créer de nouveaux leviers de croissance et d’innovation.
+          </p>
+         <a href="#" class="btn-learn-more">En savoir plus →</a>
+
+        </div>
+      </div>
+		
+		<div class="slider-dots">
+    <span class="dot active" data-index="0"></span>
+    <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
+    <span class="dot" data-index="4"></span>
+    <span class="dot" data-index="5"></span>
+    <span class="dot" data-index="6"></span>
+    <span class="dot" data-index="7"></span>
+</div>
+    </div>
+  </div>
+</section>
+<section class="my-expertises2">
+	<h2> Notre accompagnement </h2>
+  <div class="my-expertises2-container">
+    <!-- Colonne gauche : liste d’onglets -->
+    <div class="my-expertises2-left">
+      <div class="my-expertises2-tabs">
+        <button class="my-expertises2-link is-active" data-index="0">Endpoint Management</button>
+        <button class="my-expertises2-link" data-index="1">Modern Collaboration</button>
+        <button class="my-expertises2-link" data-index="2">Infrastructure Cloud</button>
+        <button class="my-expertises2-link" data-index="3">DevOps</button>
+        <button class="my-expertises2-link" data-index="4">Cybersécurité</button>
+        <button class="my-expertises2-link" data-index="5">Transformation des SI</button>
+        <button class="my-expertises2-link" data-index="6">Développement durable et Green IT</button>
+        <button class="my-expertises2-link" data-index="7">Data &amp; IA</button>
+      </div>
+    </div>
+
+    <!-- Colonne droite : slides -->
+	  
+    <div class="my-expertises2-right">
+      <div class="my-expertises2-carousel">
+
+        <!-- Slide 1 (index 0) -->
+        <div class="my-expertises2-slide is-active" data-index="0">
+          <img src="images/download.svg" alt="Engagement">
+          <h3>Device Management</h3>
+          <p>
+            Nous gérons votre parc informatique (PC, mobiles, tablettes)
+            pour garantir une utilisation fluide et sécurisée.
+          </p>
+			<div class="button-zone">
+			 <button class="my-expertises2-cate ">Management du Endpoint</button>
+        <button class="my-expertises2-cate" >Pleins d'autres</button>
+     
+			</div>
+          <a href="#" class="btn-learn-more2">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 2 (index 1) -->
+        <div class="my-expertises2-slide" data-index="1">
+          <img src="images/download.svg" alt="Engagement">
+          <h3>Collaboratif</h3>
+          <p>
+            Nous mettons en place des outils et plateformes collaboratives
+            pour fluidifier la communication interne et optimiser la productivité.
+          </p>
+			<div class="button-zone">
+			 <button class="my-expertises2-cate ">Collaboration digitale </button>
+        <button class="my-expertises2-cate" >Outils divers</button>
+        <button class="my-expertises2-cate" >Communication interne</button>
+			</div>
+          <a href="#" class="btn-learn-more2">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 3 (index 2) -->
+        <div class="my-expertises2-slide" data-index="2">
+          <img src="images/download.svg" alt="Engagement">
+          <h3>Cloud</h3>
+          <p>
+            Nous migrons vos infrastructures vers le cloud, 
+            assurant performance et haute disponibilité.
+          </p>
+			<div class="button-zone">
+			 <button class="my-expertises2-cate ">Digitalisation des documents </button>
+        <button class="my-expertises2-cate" >Intégration au Cloud</button>
+        <button class="my-expertises2-cate" >Workflows</button>
+				<button class="my-expertises2-cate" >Azure, AWS, GCP...</button>
+			</div>
+          <a href="#" class="btn-learn-more2">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 4 (index 3) -->
+        <div class="my-expertises2-slide" data-index="3">
+          <img src="images/download.svg" alt="Engagement">
+          <h3>DevOps</h3>
+          <p>
+            Nous rapprochons développement et opérations pour accélérer
+            vos cycles de mise en production et gagner en agilité.
+          </p>
+			<div class="button-zone">
+			 <button class="my-expertises2-cate ">DevOps</button>
+      
+			</div>
+          <a href="#" class="btn-learn-more2">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 5 (index 4) -->
+        <div class="my-expertises2-slide" data-index="4">
+          <img src="images/download.svg" alt="Engagement">
+          <h3>Cybersécurité</h3>
+          <p>
+            Nous protégeons vos systèmes et données grâce à
+            des solutions de sécurité avancées et une veille constante.
+          </p>
+			<div class="button-zone">
+			 <button class="my-expertises2-cate ">Bonnes pratiques</button>
+        <button class="my-expertises2-cate" >Mise en quarantaine</button>
+        <button class="my-expertises2-cate" >Prévention Cyber</button>
+			</div>
+          <a href="#" class="btn-learn-more2">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 6 (index 5) -->
+        <div class="my-expertises2-slide" data-index="5">
+          <img src="images/download.svg" alt="Engagement">
+          <h3>Transformation des SI</h3>
+          <p>
+            Nous accompagnons les DSI pour concrétiser leurs programmes
+            de transformation digitale et moderniser leurs infrastructures.
+          </p>
+			<div class="button-zone">
+			 <button class="my-expertises2-cate ">Digitalisation du SI </button>
+        <button class="my-expertises2-cate" >Optimisation du SI</button>
+        <button class="my-expertises2-cate" >Evolution de l'organisation IT</button>
+				  <button class="my-expertises2-cate" >Evolution des SI</button>
+			</div>
+          <a href="#" class="btn-learn-more2">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 7 (index 6) -->
+        <div class="my-expertises2-slide" data-index="6">
+          <img src="images/download.svg" alt="Engagement">
+          <h3>Green IT</h3>
+          <p>
+            Nous vous aidons à réduire l’empreinte carbone de vos systèmes
+            en optimisant vos ressources et en adoptant des solutions durables.
+          </p>
+			<div class="button-zone">
+			 <button class="my-expertises2-cate ">Accompagnement Green IT </button>
+        <button class="my-expertises2-cate" >Reduction empreinte carbone</button>
+        <button class="my-expertises2-cate" >Plein de choses</button>
+			</div>
+          <a href="#" class="btn-learn-more2">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 8 (index 7) -->
+        <div class="my-expertises2-slide" data-index="7">
+          <img src="images/download.svg" alt="Engagement">
+          <h3>IA &amp; Data</h3>
+          <p>
+            Nous exploitons l’intelligence artificielle et la data
+            pour créer de nouveaux leviers de croissance et d’innovation.
+          </p>
+		<div class="button-zone">
+			 <button class="my-expertises2-cate ">Intégration de l'IA</button>
+        <button class="my-expertises2-cate">Gestion de la data</button>
+        
+			</div>
+			<a href="#" class="btn-learn-more2">En savoir plus →</a>
+        </div>
+
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+<section class="my-expertises3">
+  
+  <div class="my-expertises3-container">
+    <!-- Colonne gauche : liste d’onglets -->
+    <div class="my-expertises3-left">
+		<h2> Nos expertises </h2>
+		<p> Nos experts vous accompagnent tout au long du cycle de vie de vos projets d’infrastructures IT : du conseil à la réalisation jusqu’à la formation et la maintenance. </p>
+    </div>
+
+    <!-- Colonne droite : slides -->
+    <div class="my-expertises3-right">
+      <div class="my-expertises3-left-column">
+
+        <!-- Slide 1 (index 0) -->
+        <div class="my-expertises3-slide" data-index="0">
+          <img src="images/digital-workplace.svg" alt="Engagement">
+          <h3>Device Management</h3>
+          <p>
+            Nous gérons votre parc informatique (PC, mobiles, tablettes)
+            pour garantir une utilisation fluide et sécurisée.
+          </p>
+        
+          <a href="#" class="btn-learn-more3">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 2 (index 1) -->
+        <div class="my-expertises3-slide" data-index="1">
+          <img src="images/digital-workplace.svg" alt="Engagement">
+          <h3>Collaboratif</h3>
+          <p>
+            Nous mettons en place des outils et plateformes collaboratives
+            pour fluidifier la communication interne et optimiser la productivité.
+          </p>
+          
+          <a href="#" class="btn-learn-more3">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 3 (index 2) -->
+        <div class="my-expertises3-slide" data-index="2">
+          <img src="images/digital-workplace.svg" alt="Engagement">
+          <h3>Cloud</h3>
+          <p>
+            Nous migrons vos infrastructures vers le cloud,
+            assurant performance et haute disponibilité.
+          </p>
+         
+          <a href="#" class="btn-learn-more3">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 4 (index 3) -->
+        <div class="my-expertises3-slide" data-index="3">
+          <img src="images/digital-workplace.svg" alt="Engagement">
+          <h3>DevOps</h3>
+          <p>
+            Nous rapprochons développement et opérations pour accélérer
+            vos cycles de mise en production et gagner en agilité.
+          </p>
+         
+          <a href="#" class="btn-learn-more3">En savoir plus →</a>
+        </div>
+		</div>
+		<div class="my-expertises3-right-column">
+        <!-- Slide 5 (index 4) -->
+        <div class="my-expertises3-slide" data-index="4">
+          <img src="images/digital-workplace.svg" alt="Engagement">
+          <h3>Cybersécurité</h3>
+          <p>
+            Nous protégeons vos systèmes et données grâce à
+            des solutions de sécurité avancées et une veille constante.
+          </p>
+         
+          <a href="#" class="btn-learn-more3">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 6 (index 5) -->
+        <div class="my-expertises3-slide" data-index="5">
+          <img src="images/digital-workplace.svg" alt="Engagement">
+          <h3>Transformation des SI</h3>
+          <p>
+            Nous accompagnons les DSI pour concrétiser leurs programmes
+            de transformation digitale et moderniser leurs infrastructures.
+          </p>
+          
+          <a href="#" class="btn-learn-more3">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 7 (index 6) -->
+        <div class="my-expertises3-slide" data-index="6">
+          <img src="images/digital-workplace.svg" alt="Engagement">
+          <h3>Green IT</h3>
+          <p>
+            Nous vous aidons à réduire l’empreinte carbone de vos systèmes
+            en optimisant vos ressources et en adoptant des solutions durables.
+          </p>
+         
+          <a href="#" class="btn-learn-more3">En savoir plus →</a>
+        </div>
+
+        <!-- Slide 8 (index 7) -->
+        <div class="my-expertises3-slide" data-index="7">
+          <img src="images/digital-workplace.svg" alt="Engagement">
+          <h3>IA &amp; Data</h3>
+          <p>
+            Nous exploitons l’intelligence artificielle et la data
+            pour créer de nouveaux leviers de croissance et d’innovation.
+          </p>
+          
+          <a href="#" class="btn-learn-more3">En savoir plus →</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="vide">
+		</section>
+<section class="my-expertises4">
+  
+  <div class="my-expertises4-container">
+    <!-- Colonne gauche : liste d’onglets -->
+    <div class="my-expertises4-left">
+      <h2> Notre accompagnement </h2>
+      <p>
+        Nos experts vous accompagnent tout au long du cycle de vie de vos projets d’infrastructures IT : du conseil à la réalisation jusqu’à la formation et la maintenance.
+      </p>
+		  <div class="my-acc-tags2">
+          <button class="my-acc-tag2 is-active" data-target="slide-1">Device Management</button>
+          <button class="my-acc-tag2" data-target="slide-2">Modern Collaboration</button>
+          <button class="my-acc-tag2" data-target="slide-3">Infrastructure Cloud</button>
+          <button class="my-acc-tag2" data-target="slide-4">DevOps</button>
+          <button class="my-acc-tag2" data-target="slide-5">Cybersécurité</button>
+          <button class="my-acc-tag2" data-target="slide-6">Transformation des SI</button>
+          <button class="my-acc-tag2" data-target="slide-7">Développement Durable et Green IT</button>
+          <button class="my-acc-tag2" data-target="slide-8">IA &amp; Data</button>
+        </div>
+    </div>
+
+    <!-- Colonne droite : slides -->
+     <div class="my-expertises4-right">
+      <div class="my-expertises4-slide" data-index="0">
+  <h3>Device Management</h3>
+  <p>
+    Nous gérons votre parc informatique (PC, mobiles, tablettes)
+    pour garantir une utilisation fluide et sécurisée.
+  </p>
+  <a href="#" class="btn-learn-more4">En savoir plus →</a>
+  <h3>Nos expertises</h3>
+  <ul>
+    <li>Gestion de parc informatique</li>
+    <li>Maintenance préventive</li>
+    <li>Déploiement de solutions sécurisées</li>
+  </ul>
+  <h3>Nos clients</h3>
+  <img src="images/Capture.PNG" alt="Client">
+</div>
+
+<!-- Slide 2 -->
+<div class="my-expertises4-slide" data-index="1">
+  <h3>Modern Collaboration</h3>
+  <p>
+    Nous mettons en place des outils et plateformes collaboratives
+    pour fluidifier la communication interne et optimiser la productivité.
+  </p>
+  <a href="#" class="btn-learn-more4">En savoir plus →</a>
+  <h3>Nos expertises</h3>
+  <ul>
+    <li>Outils collaboratifs (Teams, SharePoint…)</li>
+    <li>Digital Workplace</li>
+    <li>Communication unifiée</li>
+  </ul>
+  <h3>Nos clients</h3>
+  <img src="images/Capture.PNG" alt="Client">
+</div>
+
+<!-- Slide 3 -->
+<div class="my-expertises4-slide" data-index="2">
+  <h3>Infrastructure Cloud</h3>
+  <p>
+    Nous migrons vos infrastructures vers le cloud,
+    assurant performance et haute disponibilité.
+  </p>
+  <a href="#" class="btn-learn-more4">En savoir plus →</a>
+  <h3>Nos expertises</h3>
+  <ul>
+    <li>Migration vers le cloud public/privé</li>
+    <li>Optimisation des infrastructures</li>
+    <li>Cloud hybride et multicloud</li>
+  </ul>
+  <h3>Nos clients</h3>
+  <img src="images/Capture.PNG" alt="Client">
+</div>
+
+<!-- Slide 4 -->
+<div class="my-expertises4-slide" data-index="3">
+  <h3>DevOps</h3>
+  <p>
+    Nous rapprochons développement et opérations pour accélérer
+    vos cycles de mise en production et gagner en agilité.
+  </p>
+  <a href="#" class="btn-learn-more4">En savoir plus →</a>
+  <h3>Nos expertises</h3>
+  <ul>
+    <li>Automatisation des déploiements</li>
+    <li>Intégration et livraison continues (CI/CD)</li>
+    <li>Infrastructure as Code</li>
+  </ul>
+  <h3>Nos clients</h3>
+  <img src="images/Capture.PNG" alt="Client">
+</div>
+
+<!-- Slide 5 -->
+<div class="my-expertises4-slide" data-index="4">
+  <h3>Cybersécurité</h3>
+  <p>
+    Nous protégeons vos systèmes et données grâce à
+    des solutions de sécurité avancées et une veille constante.
+  </p>
+  <a href="#" class="btn-learn-more4">En savoir plus →</a>
+  <h3>Nos expertises</h3>
+  <ul>
+    <li>Audit de sécurité</li>
+    <li>Protection des postes et des accès</li>
+    <li>Détection et réponse aux incidents</li>
+  </ul>
+  <h3>Nos clients</h3>
+  <img src="images/Capture.PNG" alt="Client">
+</div>
+
+<!-- Slide 6 -->
+<div class="my-expertises4-slide" data-index="5">
+  <h3>Transformation des SI</h3>
+  <p>
+    Nous accompagnons les DSI pour concrétiser leurs programmes
+    de transformation digitale et moderniser leurs infrastructures.
+  </p>
+  <a href="#" class="btn-learn-more4">En savoir plus →</a>
+  <h3>Nos expertises</h3>
+  <ul>
+    <li>Digitalisation du SI</li>
+    <li>Modernisation des processus métiers</li>
+    <li>Accompagnement au changement</li>
+  </ul>
+  <h3>Nos clients</h3>
+  <img src="images/Capture.PNG" alt="Client">
+</div>
+
+<!-- Slide 7 -->
+<div class="my-expertises4-slide" data-index="6">
+  <h3>Développement Durable et Green IT</h3>
+  <p>
+    Nous vous aidons à réduire l’empreinte carbone de vos systèmes
+    en optimisant vos ressources et en adoptant des solutions durables.
+  </p>
+  <a href="#" class="btn-learn-more4">En savoir plus →</a>
+  <h3>Nos expertises</h3>
+  <ul>
+    <li>Optimisation énergétique des datacenters</li>
+    <li>Reconditionnement des équipements</li>
+    <li>Suivi des indicateurs environnementaux IT</li>
+  </ul>
+  <h3>Nos clients</h3>
+  <img src="images/Capture.PNG" alt="Client">
+</div>
+
+<!-- Slide 8 -->
+<div class="my-expertises4-slide" data-index="7">
+  <h3>IA &amp; Data</h3>
+  <p>
+    Nous exploitons l’intelligence artificielle et la data
+    pour créer de nouveaux leviers de croissance et d’innovation.
+  </p>
+  <a href="#" class="btn-learn-more4">En savoir plus →</a>
+  <h3>Nos expertises</h3>
+  <ul>
+    <li>Analyse prédictive</li>
+    <li>Valorisation des données</li>
+    <li>Automatisation intelligente des processus</li>
+  </ul>
+  <h3>Nos clients</h3>
+  <img src="images/Capture.PNG" alt="Client">
+</div>
+    </div>
+    </div>
+		
+</section>
+
+
+		
+		<footer>
+			<div class="footer-left">...</div>
+		</footer>
+		<script src="script.js"></script>
+
+
+
+
+	</body>
+</html>

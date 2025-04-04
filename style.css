@@ -1,0 +1,1853 @@
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
+    </style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Figtree';
+        }
+	
+        html, body {
+
+            min-height:100vh;
+overflow-x: clip;
+			
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+			justify-content:center;	
+			margin-bottom:0;
+			font-family: 'Figtree'
+        }
+
+		*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+		
+      
+        
+       header {
+    background: white;
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0; /* Force le header à toucher le bord gauche */
+    right: 0; /* Force le header à toucher le bord droit */
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+		
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 50px;
+			
+			align-items:center;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #00274d;
+            font-weight: bold;
+        }
+		nav button {
+			background: #FF4343;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 0px;
+            border-radius: 5px;
+}
+	
+		.hero {
+			height: 480px;
+			background: url('images/placeholder-black.png') center ;
+			background-size:cover;
+				 display: flex;
+			align-items: center;
+			justify-content: center; /* Garde les deux parties bien espacées */
+
+			padding: 90px;
+			max-width: 100%; /* Assure que le bloc reste centré */
+			
+			color:white;
+			
+			}
+		
+		.hero-left {
+			flex: 1;
+			font-size: 92px;
+			font-weight: bold;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start; /* Aligne bien à gauche */
+			text-align: left; /* Force l'alignement du texte */
+	
+		}
+
+
+
+		.hero-right {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			font-size: 24px;
+			
+		}
+
+.hero-right p {
+			margin-bottom:50px;
+			padding-right:130px
+		}
+
+
+        .hero-button {
+            background: #FF4343;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 0px;
+            border-radius: 5px;
+        }
+        .testimonial {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+       		height: 618px;
+            padding: 90px;
+          	max-width: 100%;
+			max-height:100%
+    
+
+        }
+        .testimonial img {
+            width: 433px;
+            height: 475px;
+            border-radius: 20px 20px 200px 20px;
+            object-fit: cover;
+
+        }
+        .testimonial-text {
+
+            padding-left: 200px;
+			padding-right: 100px
+box-sizing: border-box;
+        }
+        .testimonial-text h2 {
+            font-size: 48px;
+            color: #ff3b30;
+            padding-bottom: 40px;
+        }
+        .testimonial-text p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 27px;
+			max-width:100%
+ 			
+        }
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .testimonial-author img {
+            width: 107px;
+            height: 107px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        footer {
+            background: #00274d;
+            color: white;
+           
+            position: relative;
+            min-height: 100px;
+           
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+			margin-top:auto;
+			padding-bottom:0;
+        }
+        .footer-left, .footer-right {
+            display: flex;
+            flex-direction: column;
+        }
+        .wave-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+			height: 200px;
+        }
+        .wave-container svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+		.wave-container-bottom {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+
+		height: 200px;
+		margin-bottom: -2px; /* Évite une ligne blanche entre le SVG et la section suivante */
+		}
+
+		.wave-container-bottom svg {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+
+
+
+		.resources {
+			display: flex;
+			
+			justify-content: center;
+			background-color: #FFF1F1; /* Couleur rose clair */
+			padding: 60px 90px;
+			width:100%;
+			margin:auto;
+			box-sizing: border-box;
+
+		}
+
+		.resources-text {
+			flex: 1;
+			max-width: 50%;
+			padding-right:50px;
+			box-sizing: border-box;
+		}
+
+		.resources-text h2 {
+			font-size: 48px;
+			color: #FF3B30;
+			margin-bottom: 15px;
+		}
+
+		.resources-text p {
+			font-size: 18px;
+			color: #00274D;
+			margin-bottom: 20px;
+			
+		}
+
+		.resources-list {
+			list-style: none;
+			padding: 0;
+		}
+
+		.resources-list li {
+			font-size: 16px;
+			display: flex;
+			align-items: center;
+			margin-bottom: 8px;
+		}
+
+		.icon {
+			width: 14px;
+			height: 14px;
+			display: inline-block;
+			margin-right: 10px;
+			border-radius: 4px;
+		}
+
+		/* Couleurs des icônes */
+		.red { background-color: #FF3B30; }
+		.green { background-color: #34C759; }
+		.blue { background-color: #007AFF; }
+		.yellow { background-color: #FF9500; }
+
+		.resources-image {
+			flex: 1;
+			max-width: 40%;
+			padding-left:50px
+
+		}
+
+		.resources-image img {
+			width: 433px;
+			height: 475px;
+			border-radius: 20px 20px 200px 20px;
+			object-fit: cover;
+
+		}
+
+		.photo-carousel {
+			text-align: left;
+
+			background-color: white;
+			max-width:100vw;
+
+		}
+
+		.photo-carousel h2 {
+			font-size: 40px;
+			color: black;
+			margin-bottom: 20px;
+			padding-left : 90px;
+			padding-top:50px
+
+		}
+
+		.carousel-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			overflow: hidden;
+
+			max-width:100%;
+			margin: auto;
+		}
+		/* Duplication des images pour un effet continu */
+		.carousel .carousel-track {
+			display: flex;
+			gap: 20px;
+			max-width: 100vw;
+			padding:60px 90px;
+		}
+
+		.carousel .carousel-track img {
+			width: 180px;
+			height: 180px;
+			object-fit: cover;
+			border-radius: 20px 0 20px 20px ;
+		}
+
+		.carousel {
+			display: flex;
+			gap: 20px;
+			animation: scroll 20s linear infinite; /* Animation de 20s en boucle */
+			width: max-content; /* Permet de ne pas couper les images */
+		}
+		.carousel img {
+			width: 180px;
+			height: 180px;
+			object-fit: cover;
+
+			transition: transform 0.3s ease;
+		}
+
+		.carousel img:hover {
+			transform: scale(1.05);
+		}
+		/* Animation du défilement */
+		@keyframes scroll {
+			from {
+				transform: translateX(0);
+			}
+			to {
+				transform: translateX(-50%);
+			}
+		}
+		.video-section {
+			display: flex;
+			justify-content: space-between;
+			gap: 40px;
+			padding: 10px 90px;
+			padding-top:60px;
+
+			margin: auto;
+		}
+
+		.video-container {
+			flex: 1;
+			text-align: flex-start;
+box-sizing: border-box;
+		}
+
+		.video-container h2 {
+			font-size: 42px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			padding-bottom:20px;
+		}
+
+		.red-title {
+			color: #ff3b30; /* Titre en rouge */
+		}
+
+		.video-wrapper {
+			position: relative;
+			width: 100%;
+
+			margin: 0 auto;
+			border-radius: 15px;
+			overflow: hidden;
+		}
+
+		.video-wrapper iframe {
+			width: 608px;
+			height: 410px;
+
+			border-radius: 15px;
+		}
+
+		.video-overlay {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: rgba(0, 0, 0, 0.5);
+			border-radius: 50%;
+			width: 80px;
+			height: 80px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transition: opacity 0.3s ease;
+		}
+
+		.video-overlay:hover {
+			opacity: 0.8;
+		}
+
+		.play-button {
+			font-size: 32px;
+			color: white;
+			background: none;
+			border: none;
+			cursor: pointer;
+		}
+
+		.video-container p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-top: 20px;
+			max-width:608px;
+		}
+
+		.cta-button {
+			background: #ff3b30;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+			border-radius: 5px;
+			margin-top: 20px;
+		}
+
+
+		.news-section {
+			display:flex;
+			text-align: center;
+			background: #ECFFFF; /* Couleur de fond */
+			padding: 0px 90px;
+			margin :auto;
+			box-sizing: border-box;
+			justify-content:center;
+			flex-direction:column;
+			width:100%;
+
+
+		}
+
+		.news-section h2 {
+			font-size: 40px;
+			font-weight: bold;
+			margin-bottom: 100px;
+			text-align:left;
+			z-index:600
+		}
+
+		.news-container {
+			display: flex;
+			justify-content: center;
+			gap: 150px;
+
+			margin: auto;
+			overflow:visible;
+		}
+
+		.news-card {
+			width: 280px;
+			height: 320px;
+			perspective: 1000px; /* Ajoute la perspective pour le flip */
+			overflow:visible;
+			margin-bottom:100px;
+
+		}
+
+		.news-card-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			transform-style: preserve-3d;
+			transition: transform 0.9s ease-in-out;
+		}
+
+		.news-card:hover .news-card-inner {
+			transform: rotateY(-180deg); /* Effet de rotation */
+		}
+
+		/* Face avant */
+		.news-card-front, .news-card-back {
+			position: absolute;
+			width: 280px;
+			height: 320px;
+			
+			backface-visibility: hidden;
+
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: bold;
+			overflow:visible;
+		}
+
+		/* Face avant - Image */
+		.news-card-front {
+			background-size: cover;
+			background-position: center;
+			color: white;
+			border-radius: 20px 0 20px 20px ;
+		}
+
+		.news-card-front p {
+
+			padding: 10px;
+			border-radius: 5px;
+		}
+
+		/* Face arrière */
+		.news-card-back {
+			background: #30C9C9;
+			color: white;
+			transform: rotateY(180deg);
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+			border-radius:  0 20px 20px 20px ;
+		}
+
+		/* Spécifique pour la carte des publications */
+		.news-publications {
+			background: #30C9C9;
+			color: white;
+		}
+
+		.news-card-back ul {
+			list-style: none;
+			padding: 0;
+			text-align: left;
+		
+		}
+
+		.news-card-back ul li {
+			margin-bottom: 10px;
+		}
+
+		.interlocuteurs {
+			text-align: center;
+			padding: 60px 90px;
+			width:100%;
+			box-sizing:border-box;
+		}
+
+		.interlocuteurs h2 {
+			text-align: left;
+			padding-bottom: 60px ;
+			font-size:40px;
+
+		}
+
+		.interlocuteurs h3 {
+			text-align: left;
+			font-size:20px;
+			margin-bottom:50px;
+		}
+		.interlocuteurs p {
+			text-align: left;
+			font-size:14px;
+			margin:0px;
+
+		}
+
+		.interlocuteurs-container {
+			display: flex;
+			justify-content: center;
+			gap: 70px;
+
+		}
+
+		.interlocuteur-card {
+			position: relative;
+			width: 304px;
+			height: 425px;
+			background: white;
+			border-radius: 20px 0 20px 20px ;
+			overflow: hidden;
+			transition: transform 0.5s ease-in-out;
+			box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+		}
+
+		.interlocuteur-card:hover {
+			transform: translateY(-30px);
+		}
+
+		.interlocuteur-card img {
+			width: 100%;
+			height: 85%;
+			object-fit: cover;
+			border-radius: 20px 0px 0 0;
+		}
+
+		.interlocuteur-info {
+			background: #00274d;
+			color: white;
+			padding: 15px;
+			text-align: center;
+			font-size: 18px;
+			padding-top:0;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 20%;
+			display: flex;
+			flex-direction: column;
+			 overflow: hidden; 
+			transition: height 0.5s ease-in-out;
+		}
+
+
+		/* Quand on passe la souris sur la carte */
+		.interlocuteur-card:hover .interlocuteur-info {
+			height: 40%; /* La zone de texte s'agrandit */
+			background-color: #668DA0;
+		}
+
+	.valeurs {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.valeurs h2 {
+    font-size: 48px;
+    font-family: 'Figtree';
+	margin:60px;
+}
+
+.valeurs-container {
+    background: #032739;
+    color: white;
+    border-radius: 50px 0 50px 50px;
+    padding: 20px;
+    position: relative;
+    margin: auto;
+    height: 482px;
+    width: 1209px;
+    overflow: visible;
+}
+
+.tabs-desktop {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+	 padding-bottom: 30px;
+}
+
+.tab-link {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    cursor: pointer;
+	min-width:310px;
+    margin: auto;
+    transition: color 0.3s ease;
+	font-weight : 100;
+	
+}
+
+
+.tab-link.active {
+    font-weight: bold;
+    color: white;
+}
+
+.content-desktop {
+    align-items: center;
+    padding: 0px 30px ;
+
+
+    width: 100%;
+}
+
+.value-item {
+    display: none
+	
+}
+
+.value-item.active {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+   	max-width: 100%;
+    font-size: 18px;
+	padding-right:30px;
+	align-items : center;
+	
+
+  
+	
+}
+
+.value-item img {
+    width: 420px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 0 0 0 40px;
+    flex-shrink: 0;
+}
+.value-item p{
+	line-height:150%;
+	padding-right:40px;
+		padding-left:30px;
+}
+
+.text {
+    text-align: left;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+  
+    transition: background 0.3s ease;
+}
+
+.valeurs dot{
+	  cursor: pointer;
+}
+
+.dot.active {
+    background: white;
+}
+
+/* -- Slider mobile : pas d'absolu hors du media query -- */
+.slider-mobile {
+    display: none; 
+    padding: 15px;
+    z-index: 999;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+	padding-right:20px;
+}
+
+.slide h3
+ {
+	
+    margin-bottom: 30px;
+	margin-top:0;
+	
+}
+.slide p {
+	margin:30px 0;	
+	font-size:16px;
+	padding-bottom:0px;
+	line-height:150%;
+	text-align:left;
+	
+}
+
+.slide.active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+    flex-direction: column;
+    
+   
+    z-index: 1;
+}
+
+/* -- Mode mobile -- */
+@media (max-width: 768px) {
+    .tabs-desktop,
+    .content-desktop {
+        display: none;
+    }
+
+	.dot {
+    width: 7px;
+		height: 7px;}
+
+    .valeurs-container {
+        display: flex;
+        width: calc(100% - 30px);
+        max-width: 384px;
+        height: 506px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .valeurs h2 {
+        font-size: 34px;
+    }
+	
+	
+
+    /* Le conteneur du slider */
+    .slider-mobile {
+        display: block;
+        position: relative;    /* Conteneur relatif */
+        width: 384px;         /* Largeur fixe */
+        height: 100%;         /* Laisse la hauteur suivre .valeurs-container */
+        margin: 0 auto;       /* Centre horizontalement */
+        overflow: hidden;
+        padding: 0;           /* Évite un décalage interne */
+        z-index: 999;
+		touch-action: pan-y;
+    }
+
+    /* Chaque slide en absolu occupe tout l'espace du conteneur */
+    .slider-mobile .slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0;
+        transform: translateX(100%);
+        z-index: 1;
+    }
+
+    .slider-mobile .slide.active {
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 2;
+    }
+
+    /* L'image est centrée */
+    .slider-mobile img {
+        width: 312px;
+        height: 181px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+		border-radius : 0 0 0 20px ;
+		
+    }
+
+	.slide.active h3{
+		font-weight:bold;
+		font-size:22px;
+	}
+
+	.valeurs h2 {
+
+	margin:50px;
+}
+
+	header {
+		display:none;
+	}
+	
+}
+
+/* La section globale a un fond rouge occupant toute la largeur */
+.my-expertises {
+	display : flex;
+	flex-direction:column;
+ 	position: relative;
+ 	width : 100%;   /* Espace haut/bas */
+  	margin-top: 100px;  
+	justify-content:center;
+	align-items:center;/* Pas de marge externe */
+}
+
+.my-expertises h2{
+	font-size:40px ;
+}
+
+.my-expertises h3{
+	font-size:30px;
+	font-weight:normal;
+	margin :40px 90px;
+	text-align:center;
+}
+/* Le conteneur interne : 2 colonnes (gauche=rouge, droite=blanc) */
+.my-expertises-container {
+  display: flex;
+  width: 100%;      /* Centre horizontalement le contenu */
+  position: relative;
+	height:743px;
+	margin-top:20px;
+}
+
+/* Colonne de gauche : titre, texte, onglets */
+.my-expertises-left {
+  width: 50%;         /* Largeur fixe, ajuste selon ton besoin */
+  padding: 20px 20px; 
+	background-color : #FF4343;
+	height : 743px;
+	align-items:center;
+
+	
+	
+	
+}
+
+/* Titre et paragraphe */
+.my-expertises-left h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.my-expertises-left p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+/* La liste d'onglets */
+.my-expertises-tabs {
+	position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 70px;
+	padding-left:150px;
+	margin-top:70px;
+	
+
+}
+
+/* Boutons d'onglet */
+.my-expertises-link {
+  background: none;
+  border: none;       /* Texte blanc */
+  font-size:25px;
+	color:white;
+	font-weight:bold;
+
+  cursor: pointer;
+  
+  transition: background 0.3s, font-weight 0.3s;
+	text-align:left;
+	
+	justify-content:left;
+	display : block;
+}
+
+
+.my-expertises-link {
+    font-size: 25px; /* Taille normale */
+    transition:  font-size 0.2s ease-in-out;
+	min-height:50px;
+}
+
+/* Onglet actif : le texte grossit */
+.my-expertises-link.is-active {
+    font-size: 28px; /* Agrandissement léger */
+    padding-left: 5px; /* Décalage léger pour éviter le débordement */
+}
+
+/* Colonne de droite : bloc blanc qui chevauche un peu le rouge */
+.my-expertises-right {
+ position: absolute;
+  top: 100px;    /* Décalage vertical */
+  right: 0;
+
+  flex: 1;
+  background: #fff;
+  color: #000;              /* Texte noir */
+  border-radius: 10px;      /* Angle arrondi */
+  
+  padding: 50px;
+	
+	padding-bottom:40px;
+
+	margin-bottom:0;/* Marge négative pour superposer la zone rouge */
+  	z-index: 1;         
+	height : 593px; 
+	width:50%;/* Au-dessus du fond rouge */
+	border-radius:60px 60px 0 0 ;
+
+}
+
+/* Les slides */
+.my-expertises-slide {
+ display: none;
+    opacity: 0;
+    transition:transform 0.5s ease-in-out opacity 0.3s ease-in-out ;        /* Cachées par défaut */
+
+		
+}
+.my-expertises-slide.is-active {
+  display: flex;  
+	flex-direction:column;
+	justify-content:left;/* Slide active visible */
+	  margin: 50px;
+	opacity:1;
+
+}
+
+
+/* Titres et textes dans les slides */
+.my-expertises-slide h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+	font-weight:bold;
+	margin:20px 0;
+	text-align:left;
+  color: #FF4343;
+}
+.my-expertises-slide p {
+  color: black;
+  margin-bottom: 15px;
+  line-height: 150%;
+font-size:18px;
+}
+
+.btn-learn-more {
+  display: inline-block;            /* Adapte à la taille du texte */
+  color: #1a2f3b;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  border-bottom: 1px solid transparent;
+	padding-bottom: 6px;
+ 
+	margin: 20px 0 ;
+}
+
+
+.btn-learn-more::after {
+  content: "";
+  position: absolute;
+  bottom: 0;   
+	  width: 20%;    /* Ligne collée en bas du texte */
+  left: 0;
+                     /* Part de 0 de largeur */
+  height: 1px;                /* Épaisseur du trait */
+  background: #1a2f3b;        /* Couleur du trait (même que le texte) */
+  transition: width 0.3s ease-in-out;;/* Animation fluide (accélère/décélère) */
+}
+.btn-learn-more::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%; /* Caché au départ */
+  height: 1px;
+  background: #FF4343; /* Rouge */
+  transition: width 0.3s ease-in-out; /* Animation */
+	z-index:20;
+}
+
+
+.btn-learn-more:hover::before {
+  width: 20%; /* Elle s'étend complètement */
+}
+
+
+.my-expertises-slide img{
+	height:100px;
+	width:100px;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.slider-dots .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc; /* Couleur des dots inactifs */
+    border-radius: 50%;
+ 
+    transition: background 0.3s ease;
+}
+
+.slider-dots .dot.active {
+    background-color: #0b2536; /* Couleur du dot actif */
+}
+
+
+
+.active-indicator {
+  position: absolute;
+  left: 100px;          
+  top: 0;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1;
+   transition: transform 0.4s ease-in-out; /* Animation du déplacement vertical */
+  pointer-events: none;            /* Pour que la flèche ne gêne pas le clic */
+	 transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1); 
+}
+
+
+
+@media (max-width: 768px) {
+  /* Le conteneur s’empile en colonne */
+  .my-expertises-container {
+    flex-direction: column;
+    height: auto;  /* Laisse la hauteur s'adapter */
+  }
+	
+.my-expertises h3{
+	font-size : 20px;
+	margin : 20px;
+	}
+
+  /* Colonne de gauche : prend 100% de la largeur */
+  .my-expertises-left {
+    width: 100%;
+    height: auto;  /* Laisse le contenu grandir en hauteur */
+    position: static; 	
+    margin-bottom: 20px;
+  }
+
+  /* Les onglets */
+  .my-expertises-tabs {
+    padding: 20px;    /* Réduis les padding */
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  /* Onglets : taille du texte plus petite, ou comme tu veux */
+  .my-expertises-link {
+    font-size: 20px;
+  }
+
+  /* Colonne de droite : prend 100% et se place sous la gauche */
+  @media (max-width: 768px) {
+  /* Affiche toutes les slides en vertical */
+  .my-expertises-slide {
+    display: flex !important;
+	  flex-direction:column;/* Force l'affichage */
+    opacity: 1 !important;        /* Annule le fade-out */
+    transform: none !important;   /* Annule le translateX si tu en as */
+    border-bottom: 1px solid #ccc;/* Trait gris de séparation */
+    margin-bottom: 20px;          /* Espace entre slides */
+    padding-bottom: 20px;         /* Espace avant le trait */
+  }
+
+  /* Le dernier slide n’a pas de trait gris */
+  .my-expertises-slide:last-child {
+    border-bottom: none;
+  }
+
+
+
+  .my-expertises-right {
+    position: static !important;
+	width:auto;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 20px !important;
+	height : auto;
+  }
+}
+
+
+  .my-expertises-slide.is-active {
+    margin: 20px;
+  }
+
+
+  .my-expertises-slide img {
+    width: 80px;  
+    height: 80px;
+  }
+	
+
+  .active-indicator {
+    display: none; 
+  }
+
+	.my-expertises-left{
+		display: none;
+	}
+	
+.my-expertises-slide  p{
+	text-align: center;
+	margin:10px;
+	}
+.my-expertises-slide h3{
+	text-align: center;
+	
+	}
+	
+.my-expertises-slide{
+	align-items:center;
+	justify-content:center;
+	}
+
+.btn-learn-more {
+    display: inline-block;
+    background-color: #FF4343;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: none;
+    position: static;
+    border-bottom: none;
+  }
+
+  .btn-learn-more::before,
+  .btn-learn-more::after {
+    display: none;
+  }
+	.my-expertises-carousel {
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden; /* Coupe ce qui dépasse */
+		
+}
+	
+	.my-expertises-carousel p{
+	height:100px;
+	}
+
+/* Toutes les slides se superposent au même endroit */
+.my-expertises-slide {
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0;
+        transform: translateX(100%);
+}
+
+/* Slide courante affichée au centre */
+.my-expertises-slide.is-active {
+opacity: 1;
+        transform: translateX(0);
+        z-index: 2;
+}
+.slider-dots{
+	display:none;
+	}
+	
+
+	
+	.hero{
+		display : none;
+	}
+	
+	.testimonial{
+		display : none;
+	}
+	.resources{
+		display : none;
+	}
+	.video-section{
+		display : none;
+	}
+	.news-section{
+		display : none;
+	}
+	.interlocuteurs{
+		display : none;
+	}
+	.wave-container{
+		display : none;
+	}
+	.photo-carousel{
+		display : none;
+	}
+	.wave-container-bottom{
+		display:none
+	}
+	.my-expertises2{
+		display:none;
+	}
+
+	
+}
+
+/* SECTION GLOBALE */
+.my-expertises2 {
+
+	width:100%;
+	padding:40px;
+	margin-top:100px;
+	
+
+
+}
+
+/* TITRE & SOUS-TITRE */
+.my-expertises2 h2 {
+  font-size: 40px;
+  margin: 60px;
+	margin-left:100px;
+}
+.my-expertises2 h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+	
+	
+
+}
+
+/* CONTENEUR PRINCIPAL */
+.my-expertises2-container {
+  display: flex;
+
+		padding: 0 80px;
+	justify-content:space-between
+		
+}
+
+/* COLONNE GAUCHE : onglets */
+.my-expertises2-left {
+  width: auto;       /* Ajuste la largeur selon le rendu souhaité */
+
+  padding: 20px;
+  border-radius: 6px;
+	margin-left:50px;
+	
+}
+
+/* LISTE D'ONGLETS */
+.my-expertises2-tabs {
+  display: flex;
+flex-direction : column;
+  gap: 30px;
+	align-items:left;
+}
+
+/* ONGLET */
+.my-expertises2-link {
+  background: none;
+  padding: 8px 12px
+
+  cursor: pointer;
+  color: #333;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+border-style:none;
+	font-size:30px;
+	text-align:left;
+}
+
+
+
+/* ONGLET : ACTIF */
+.my-expertises2-link.is-active { 
+  color: #ff4343; 
+  
+}
+
+/* COLONNE DROITE : CARROUSEL */
+.my-expertises2-right {
+ width: 580px !important;
+ background: linear-gradient(
+      to bottom,
+      rgba(3, 39, 57, 0.9) 0%,
+      rgba(129, 147, 156, 0.7) 70%,
+      rgba(239, 243, 247, 0.3) 100%
+    ),
+		url('images/fond-min.jpg') center/cover no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+margin-top:20px;
+  border-radius: 16px 0 16px 16px  ;
+	
+  color: white; 
+	height:500px;
+
+}
+
+
+
+
+/* CONTENEUR DES SLIDES */
+.my-expertises2-carousel {
+	position:relative;
+
+	padding:  60px;
+	
+	
+}
+
+.my-expertises2-right h3{
+	padding-top:5px;
+}
+
+/* SLIDE (CACHÉ PAR DÉFAUT) */
+.my-expertises2-slide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s; 
+	height:500px;
+}
+
+.my-expertises2-slide p{
+ 
+	height:50px;
+	line-height:150%;
+}
+
+/* SLIDE ACTIVE */
+.my-expertises2-slide.is-active {
+  display: flex;
+  opacity: 0;
+	
+}
+
+/* IMAGE DANS LA SLIDE */
+.my-expertises2-slide img {
+  max-width: 80px; 
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.button-zone{
+	display:flex;
+	flex-wrap:wrap;
+	gap :10px;
+	margin-top:30px;
+	height:100px;
+}
+
+.my-expertises2-cate{
+	background : none;
+	height:45px;
+	color:white;
+	font-size:16px;
+	border-color:white;
+	border-radius:6px;
+	border:solid;
+	padding:  auto;
+	padding-left:15px;
+	padding-right:15px;
+	border-width:1px;	
+	
+}
+
+/* DOTS */
+.slider-dots2 {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.slider-dots2 .dot2 {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slider-dots2 .dot2.active {
+  background: #ff4343;
+}
+.btn-learn-more2 {
+  display: inline-block;            /* Adapte à la taille du texte */
+  color: #1a2f3b;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  border-bottom: 1px solid transparent;
+	padding-bottom: 8px;
+	color:white;
+	margin: 20px 0 ;
+	margin-top:60px
+	
+}
+
+
+.btn-learn-more2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;   
+	width: 120px;    /* Ligne collée en bas du texte */
+  left: 0;
+  height: 1px;                /* Épaisseur du trait */
+  background: white;        /* Couleur du trait (même que le texte) */
+  transition: width 0.3s ease-in-out;;/* Animation fluide (accélère/décélère) */
+}
+
+.btn-learn-more2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%; /* Caché au départ */
+  height: 1px;
+  background: #FF4343; /* Rouge */
+  transition: width 0.3s ease-in-out; /* Animation */
+  z-index:20;
+}
+
+
+.btn-learn-more2:hover::before {
+  width: 120px; /* Elle s'étend complètement */
+}
+
+.my-expertises2-link.is-active::after {
+  content: ">"; /* La flèche ou symbole souhaité */
+  color: #ff4343; /* Couleur de la flèche */
+  margin-left: 10px; /* Espace entre le texte et la flèche */
+  font-size: 20px; /* Ajuste la taille de la flèche */
+  display: inline-block;
+  vertical-align: middle; /* Aligne avec le texte */
+	
+	
+}
+.my-expertises3 {
+  padding: 2rem 0;
+	padding-bottom:0;
+}
+
+.my-expertises3-container {
+  position: relative;
+  display: flex;
+	
+  gap: 20px;
+	
+	
+}
+.my-expertises3-container p {
+font-size:30px;
+	padding-top:40px;
+	line-height:120%;
+}
+.my-expertises3-container h2 {
+font-size:40px;
+}
+.my-expertises3-left {
+  
+  padding-left: 120px;
+	padding-right:20px;
+  position: sticky;
+ top : 100px;
+  
+	height:200px;
+	
+}
+
+
+.my-expertises3-right {
+   display: flex;
+  gap: 50px;
+	padding:60px;
+	margin-right:20px;
+	padding-bottom:0;
+	
+}
+
+.my-expertises3-right-column{
+	display:flex;
+	flex-direction:column;
+	gap:50px;
+	margin-top : 100px;
+}
+.my-expertises3-left-column{
+	display:flex;
+	flex-direction:column;
+	gap:50px;
+}
+
+.my-expertises3-slide {
+
+  border: 1px solid #ddd;
+  border-radius: 15px 0 15px 15px;
+padding:20px;
+	width:310px;
+	height:auto;
+  /* Ajuste la largeur ou la hauteur selon ton design */
+	border-bottom-color:#FF4343 ;
+	border-bottom-width:20px;
+}
+
+.my-expertises3-slide img {
+  width: 60px;
+  height: 60px;
+ 
+	margin-left:10px;
+}
+
+.my-expertises3-slide h3 {
+  margin-top: 0;
+	color : #FF4343;
+	font-size:26px;
+	padding:10px;
+}
+
+.my-expertises3-slide p {
+  margin-bottom: 1rem;
+	font-size:18px;
+		padding:10px;
+	line-height:150%;
+}
+
+
+
+
+.btn-learn-more3 {
+  display: inline-block;            /* Adapte à la taille du texte */
+  color: #1a2f3b;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+ border-bottom: 1px transparent ;
+	padding: 20px;
+	padding-left:10px;
+	
+ 
+
+
+	
+}
+
+
+.btn-learn-more3::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;   
+	  width: 120px;    /* Ligne collée en bas du texte */
+  left: 10px;       /* Part de 0 de largeur */
+  height: 2px;                /* Épaisseur du trait */
+  background: black;        /* Couleur du trait (même que le texte) */
+  transition: width 0.3s ease-in-out;/* Animation fluide (accélère/décélère) */
+	transform: scaleY(0.5);
+}
+.btn-learn-more3::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 0%; /* Caché au départ */
+  height: 2px;
+  background: #FF4343; /* Rouge */
+  transition: width 0.3s ease-in-out; /* Animation */
+	z-index:20;
+	
+}
+
+
+.btn-learn-more3:hover::before {
+  width: 120px; /* Elle s'étend complètement */
+}
+
+		
+.vide {
+		height:500px;
+		
+}
+.my-expertises4{
+	margin-bottom:200px;
+}
+.my-expertises4-container {
+  display: flex;
+  gap: 2rem;
+  padding: 100px;
+
+    /* Centre le conteneur */
+}
+
+/* Colonne de gauche */
+.my-expertises4-left {
+  flex: 0 0 50%;
+	padding-right:60px;
+}
+
+/* Titre et texte */
+.my-expertises4-left h2 {
+  font-size: 40px;
+  color: #042F50;
+  margin-bottom: 50px;
+}
+
+.my-expertises4-left p {
+  color: #1a2f3b;
+  line-height: 120%;
+  margin-bottom: 60px;
+	  margin-top: 60px;
+	font-size:30px;
+}
+
+.my-acc-tags2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .my-acc-tag2 {
+      background: #FF4343;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 25px;
+      cursor: pointer;
+      transition: background 0.3s;
+		height:45px;
+		font-size:18px;
+		
+    }
+    
+    .my-acc-tag2.is-active {
+      background: #1a2f3b;
+    }
+
+/* Colonne de droite */
+.my-expertises4-right {
+  flex: 1;
+  position: relative;
+  min-height: 300px; /* Ajuste selon ton contenu */
+
+
+}
+
+/* Slides masquées par défaut */
+.my-expertises4-slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #1a2f3b;
+	padding-left:100px;
+	padding-right:30px;
+	
+}
+
+.my-expertises4-slide img {
+max-width:150px;
+}
+
+/* Slide active affichée */
+.my-expertises4-slide.is-active {
+  display: block;
+		border-left-style:solid;
+	border-color:#E0E0E0;
+	border-left-width:1px;
+}
+
+/* Titres dans la slide */
+.my-expertises4-slide h3 {
+  color: #FF4343;
+  font-size: 30px;
+  margin-bottom: 30px;
+	margin-top: 80px;
+}
+.my-expertises4-slide p {
+
+  font-size: 18px;
+line-height:150%;
+	
+	  
+}
+
+.btn-learn-more4 {
+  display: inline-block;            /* Adapte à la taille du texte */
+  color: #1a2f3b;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+ border-bottom: 1px transparent ;
+	padding: 20px;
+	padding-left:0;
+	padding-top:10px;
+	
+ 
+
+
+	
+}
+
+
+.btn-learn-more4::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;   
+	  width: 120px;    /* Ligne collée en bas du texte */
+  left: 0;       /* Part de 0 de largeur */
+  height: 2px;                /* Épaisseur du trait */
+  background: black;        /* Couleur du trait (même que le texte) */
+  transition: width 0.3s ease-in-out;/* Animation fluide (accélère/décélère) */
+	transform: scaleY(0.5);
+}
+.btn-learn-more4::before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 0%; /* Caché au départ */
+  height: 2px;
+  background: #FF4343; /* Rouge */
+  transition: width 0.3s ease-in-out; /* Animation */
+	z-index:20;
+	
+}
+.btn-learn-more4:hover::before {
+  width: 120px; /* Elle s'étend complètement */
+}
+
+.my-expertises4-slide ul li {
+  margin-bottom: 20px; /* ou 1rem pour un espacement plus grand */
+	font-size:18px;
+	margin-left:-20px;
+}
